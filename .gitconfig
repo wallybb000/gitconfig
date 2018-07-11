@@ -1,0 +1,32 @@
+[user]
+	email = wally.guo@vivotek.com
+	name = wally.guo
+[alias]
+    a = add
+    s = status -uno -sb
+    c = checkout
+    cm = commit
+    b = branch
+    f = fetch
+    rb = rebase
+    rs = reset
+    rss = reset --hard
+    rsh = reset --soft
+    sh = stash 
+    shp = stash pop
+
+	
+    lga = log --all --graph --decorate=short --color --format=format:'\n\t\t%C(bold blue)%h%C(reset) %C(reset) %C(auto)%d%C(reset)  \n\t\t%C(bold black)%an%C(reset)%C(white): %s%C(reset)'
+    lg = log --graph --decorate=short --color --format=format:'\n\t\t%C(bold blue)%h%C(reset) %C(reset) %C(auto)%d%C(reset)  \n\t\t%C(bold black)%an%C(reset)%C(white): %s%C(reset)'
+    weeklg = log --since 1.weeks --author wally.guo@vivotek.com
+
+
+[core]
+	autocrlf = true
+	preloadindex = true
+	fscache = true
+[credential]
+	helper = wincred
+[http]
+	postBuffer = 157286400
+	sslVersion = tlsv1.2
